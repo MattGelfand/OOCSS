@@ -1,0 +1,163 @@
+*, *:before, *:after {
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	box-sizing:border-box;
+	font-smoothing: antialiased;
+}
+
+html {
+	/*background: url('../img/nature.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
+  	background-color: #2a2a2a;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+	
+.wrapper {
+	margin:0 auto;
+	font-family: "futura-pt";
+}
+
+.row { 
+margin-top:30px;
+}
+
+.column {
+	
+}
+
+.column h1 {
+	padding:20px;
+	background: #c7566f;
+	font-size: 2em;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+	border-top: 1px solid rgba(255,255,255,.2);
+	color:#fff;
+}
+
+.column a h1:hover {
+	opacity: 1;
+}
+
+.column a h1 {
+	opacity: .8;
+}
+
+.balsamic h1 {
+	background: #c58564;
+}
+
+
+.lion-img {
+	width: 300px;
+	height: 250px;
+	margin:0 auto;
+	padding-top: 50px;
+}
+
+header {
+	margin: 0 auto;
+}
+
+header h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 6px;
+	text-align: center;
+	font-size: 40px;
+	color:white;
+	margin:0;
+	padding:0;
+}
+
+#figs .sub-nav {
+	display: none;
+	background: white;
+}
+
+#figs .sub-nav li {
+	font-size: 24px;
+	padding:10px;
+	color:#c7566f;
+}
+
+#figs .sub-nav li:hover {
+	background: black;
+}
+
+#figs .visible {
+	display: block;
+}
+
+#pine .sub-nav1 {
+	display: none;
+	background: white;
+}
+
+#pine .sub-nav1 li {
+	font-size: 24px;
+	padding:10px;
+	color:#c7566f;
+}
+
+#pine .sub-nav1 li:hover {
+	background: black;
+}
+
+#pine .visible {
+	display: block;
+}
+
+/*/////// Media Queries ///////*/
+
+/* Small screens (default) */
+html { font-size: 100%; }
+ 
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) { 
+  html { 
+  	font-size: 112%; 
+  }
+
+   .column {
+    float: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }  
+}
+ 
+/* Large screens (1024px) */
+@media (min-width: 64rem) { 
+  html { font-size: 120%; }
