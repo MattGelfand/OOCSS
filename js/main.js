@@ -1,9 +1,25 @@
-$(document).ready(function(){
-	$('#figs').click(function() {
-			$('.sub-nav').toggleClass('visible');
-		});
+/*====================================
+=            ON DOM READY            =
+====================================*/
+$(function() {
+    $('.toggle-nav').click(function() {
+        // Calling a function in case you want to expand upon this.
+        toggleNav();
+    });
+});
 
-	$('#pine').click(function() {
-			$('.sub-nav1').toggleClass('visible');
-		});
-	});
+
+/*========================================
+=            CUSTOM FUNCTIONS            =
+========================================*/
+function toggleNav() {
+    if ($('.wrapper').hasClass('show-nav')) {
+        // Do things on Nav Close
+        $('.wrapper').removeClass('show-nav');
+    } else {
+        // Do things on Nav Open
+        $('.wrapper').addClass('show-nav');
+    }
+
+    //$('.wrapper').toggleClass('show-nav');
+}
