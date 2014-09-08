@@ -15,12 +15,15 @@
 html {
    font-family: "omnes-pro";
    font-weight: 300;
+   background: url('../img/hidden.jpg') no-repeat;
+   background-position: 80% 50%; 
 }
 
 body {
 	font-size: 100%;
 	width: 320px;
 	height: 548px;
+  overflow: hidden;
 }
 
 img {
@@ -73,53 +76,11 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .wrapper {
-	position: relative;
   margin:0 auto;
 }
 
-.wrapper-inner {
-  height: 100%;
-  position: relative;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-transition: 300ms linear all;
-  transition: 300ms linear all;
- }
-
-.menu {
-  width: 350px;
-  height: 5000px;
-  position: absolute;
-  top: 0;
-  left: -350px;
-}
-
-.grid {
-  background: url('../img/grid.png') center no-repeat;
-}
-
-.wrapper.show-nav .wrapper-inner{
-	-webkit-transform: translateX(300px);
-	-moz-transform: translateX(300px);
-	-ms-transform: translateX(300px);
-	-o-transform: translateX(300px);
-	transform: translateX(300px);
-	margin-left: -100px;
-}
-
-.sidebar {
-	margin-left: 150px;
-  background: #222;
-  height: 100%;
-}
-
-.sidebar-list {
-	color:#fff;
-	margin: 1.5em 0 0 1.5em;
-}
-
 nav {
-	background: #f2f2f2;
+	background: transparent;
 	height: 56px;
 }
 
@@ -130,18 +91,25 @@ nav {
   background-position: 25% 40%;
 }
 
-.site-title {
-	text-align: center;
-  font-size: 6rem;
+.stand-out {
+  color: white;
+}
+
+.section-primary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   margin:0;
   padding:0;
+  display: none;
 }
 
-.content-graph {
-  padding: 1rem;
-  font-size: 4rem;
+.header-primary {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 35px;
 }
-
 
 /*===================================== MEDIA QUERIES ======================================*/
 
@@ -159,8 +127,22 @@ html { font-size: 100%; }
     width: 100%;
   }
 
-  .content-graph {
-    
+ .name {
+  max-width: 55%;
+  margin: 0 auto;
+}
+
+.name li {
+  display: inline-block;
+  font-size: 5.2rem;
+  font-weight: 200;
+  padding:.5em;
+  color: grey;
+}
+
+  .section-primary {
+    display: block;
+    padding-bottom: 1em;
   }
 
    .column {
