@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-/*===================================== MAIN STYLES ======================================*/
+/*===================================== MAIN MOBILE STYLES ======================================*/
 
 
 .wrapper {
@@ -91,24 +91,37 @@ nav {
   background-position: 25% 40%;
 }
 
+ .name {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.name li {
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 200;
+  padding:.5em;
+  color: grey;
+}
+
 .stand-out {
   color: white;
-}
+  }
+
 
 .section-primary {
   position: absolute;
+  padding: 0 0 1rem 1rem;
   bottom: 0;
   left: 0;
-  margin:0;
-  padding:0;
-  display: none;
-}
+  }
 
 .header-primary {
   font-weight: 800;
   text-transform: uppercase;
   color: #fff;
   font-size: 35px;
+  padding:.5rem 0;
 }
 
 /*===================================== MEDIA QUERIES ======================================*/
@@ -140,10 +153,12 @@ html { font-size: 100%; }
   color: grey;
 }
 
-  .section-primary {
-    display: block;
-    padding-bottom: 1em;
-  }
+.section-primary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0;
+}
 
    .column {
     float: left;
